@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import heartFilled from '../../../svgs/heartFilled.svg';
-import heartOutlined from '../../../svgs/heartOutlined.svg';
+import heartFilled from '../../svgs/heartFilled.svg';
+import heartOutlined from '../../svgs/heartOutlined.svg';
 
 import './Card.css'
 
@@ -13,7 +13,7 @@ const Card = (props) => {
   }
 
   return (
-    <div className="card">
+    <article className="card" >
       <div className="card_header">
         <img alt={image.alt} className="card-img" src={image.url} />
         <button
@@ -32,7 +32,7 @@ const Card = (props) => {
         <p>{phone}</p>
         <p>{email}</p>
       </div>
-    </div>
+    </article>
   )
 };
 
